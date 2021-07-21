@@ -1,0 +1,13 @@
+ const talkedRecently = new Set();
+ 
+ if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Tienes que esperar 10 segundos antes de ejecutar el comando nuevamente. - " + message.author.username);
+    } else {
+
+
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+          // Removes the user from the set after a minute
+          talkedRecently.delete(message.author.id);
+        }, 10000);
+    }

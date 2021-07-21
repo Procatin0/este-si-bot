@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #000000;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif; 
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #1b1919;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #f3f8fa;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .img1 {
+   width: 12.5rem;
+   height: 12.5rem;
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+gb {
+  font-style: italic;
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 1rem;
+  left: 9rem;
+  top: 9rem;
+  max-width:100%;
+  line-height: 1.3;
+}
+
+body{
+background-color: #1f1c1c; 
+}
+
+img{
+  border-radius: 25%;
+}
+be{
+ position: absolute; 
+}
+rr {
+  font-style: italic;
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 1rem;
+  left: 9rem;
+  top: 18rem;
+  max-width:100%;
+  line-height: 1.3;
+}
+rr2 {
+  font-style: italic;
+  color: rgb(236, 15, 15);
+
+  position: absolute;
+  margin: 0.5rem;
+  left: 10rem;
+  top: 17rem;
+  max-width: calc(100% - 7rem);
+  line-height: 1.3;
+}
+ae {
+  font-style: italic;
+  color: rgb(250, 0, 0);
+  position: absolute;
+  margin: 0.5rem;
+  left: 9rem;
+  top: 21rem;
+  max-width: calc(100% - 7rem);
+  line-height: 1.3;
+}
+#img2 {
+  top: 16.8rem;
+  border-radius: 25%;
+  position: absolute;
+}
+
+#img3 {
+  top: 27rem;
+  border-radius: 1%;
+  max-width:55%;
+  max-height:calc(max-width);
+  max-block-size: 60%;
+  position: absolute;
+}
+
+#rikrol {
+  position: absolute;
+  top: 25rem;
+  height: 200px;
+  width: 200px;
+}
+
+
+#together1 {
+  font-style: italic;  
+  bottom: 0px;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  margin: 0.5rem;
+  left: 53%;
+  top: 27rem;
+  max-width: 100%;
+  line-height: 1;
+
+}
+#together2{
+  font-style: arial;
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 0.9rem;
+  left: 53%;
+  top: 32rem;
+  max-width: 100%;
+  line-height: 1.5;
+}
+#botontroll{
+  left: 90%;
+  position: absolute;
+  top: 8rem
+}
+#video1{
+  top: 120px;
+  right : 10%;
+  position: absolute;
+  width: 480px;
+  height: 360px
+}
+#musica1{
+  font-style: italic;  
+  bottom: 0px;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  margin: 0.5rem;
+  left: 100% - 30px;
+  top: 50rem;
+  max-width: 100%;
+  line-height: 1;
+}
+#imgmusica{
+  top: 50rem;
+  left: 50rem;
+  border-radius: 1%;
+  max-width:55%;
+  max-height:90%;
+  max-block-size:60%;
+  position: absolute;
+
+}
+
+#bolascore{
+  top: 2rem;
+  color: yellow;
+  left:2rem;
+  position: absolute;
+}
