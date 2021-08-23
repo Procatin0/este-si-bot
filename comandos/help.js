@@ -82,6 +82,8 @@ Detiene la cancion
 Muestra la lista de reproducion
 **tag filtros**
 Muestra filtros de sonido
+**seek [numero]**
+adelante la musica a *numero*
 
 
 `)

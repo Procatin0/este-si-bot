@@ -5,7 +5,7 @@ const ms = require('ms');
 
 module.exports = {
   name: "sorteo",
-  alias: ["rifa"],
+  alias: [""],
 
 execute (client, message, args, manager){
 
