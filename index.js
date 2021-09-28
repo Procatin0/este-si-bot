@@ -405,7 +405,7 @@ const monitor = new Monitor({
   interval: 15 // minutes
 });
 
-client.login("NzY3NzUwMjI4MDQ4MjE2MDg0.X42dHg.vgnEQ3Ci8f0hcjKNDkKeuz8bmqo")
+client.login("TU TOKEN")
   .then(() => { 
     console.log(`Estoy listo, soy ${client.user.tag}`);
 
